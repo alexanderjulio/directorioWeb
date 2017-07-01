@@ -10,13 +10,19 @@ a:hover {
   color: #fff;
 }
 
+.line {
+  background: #49BEB7;
+  padding-top: 15px;
+  padding-left: 50px;
+}
+
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover {
   background-color: #49BEB7;
   position: relative;
   border-top: solid;
   border-left: solid;
   border-right: solid;
-  font-variant: small-caps;
+  /*font-variant: small-caps;*/
 }
 
 #header-container,
@@ -45,6 +51,10 @@ a:hover {
 
 .btn.btn-platzi:hover {
   background-color: #8ab542;
+}
+
+.carousel-inner>.carousel-item>a>img, .carousel-inner>.carousel-item>img, .img-fluid {
+  height: 250px;
 }
 
 #search-bar {
@@ -131,16 +141,10 @@ a:hover {
   color: #8ab542;
 }
 
-
-
-
-
 /*Nuevos estilos*/
-
 
 /*Rd3 - Riot Design 2013
 Realizzato da Paolo Marchetti @ Riot Design*/
-
 
 /* IUBENDA stili Privacy Policy */
 
@@ -166,8 +170,8 @@ Realizzato da Paolo Marchetti @ Riot Design*/
 }
 
 .container2 {
-    margin-right: 30%;
-    margin-left: 30%;    
+    margin-right: 20%;
+    margin-left: 20%;    
 }
 
 /*  CONTENT CLASS */
@@ -183,15 +187,12 @@ Realizzato da Paolo Marchetti @ Riot Design*/
 }
 .iubenda-banner-content{
     -webkit-font-smoothing: antialiased;
-
-
 }
 .iubenda-banner-content .container1{
   position: relative;
   padding:  10px 15px;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.7);
-
 }
 
 .iubenda-cs-rationale{
@@ -226,7 +227,6 @@ Realizzato da Paolo Marchetti @ Riot Design*/
     opacity: 0.7;
 }
 
-
 /*  STYLE FOR TEXT LINK TO PRIVACY POLICY */
 .iubenda-cs-cookie-policy-lnk{
     text-decoration: underline;
@@ -239,22 +239,15 @@ Realizzato da Paolo Marchetti @ Riot Design*/
     color: #fff;
 }
 
-
 /*  FINE iubenda stili privacy policy */
-
-
-
 
 /* ==========================================================================
    Base
    ========================================================================== */
 
-
 html {
 /*  -webkit-font-smoothing: antialiased; */
 }
-
-
 
 body {
   /*background: #323C46;*/
