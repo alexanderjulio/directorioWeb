@@ -3,11 +3,20 @@ body {
 }
 
 a {
-  color: #ecf0f1;
+  color: #49BEB7;
 }
 
 a:hover {
   color: #fff;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover {
+  background-color: #49BEB7;
+  position: relative;
+  border-top: solid;
+  border-left: solid;
+  border-right: solid;
+  font-variant: small-caps;
 }
 
 #header-container,
@@ -17,7 +26,7 @@ a:hover {
 }
 
 #menu-container {
-  background-color: #EAFFF7; f7f7f9
+  background-color: #49BEB7; f7f7f9
 }
 
 #menu-container .nav-container .nav {
@@ -53,8 +62,8 @@ a:hover {
 
 #productsCarousel img {
   margin: 0 auto;
-  height: 450px;
-  width: 900px;
+  height: 400px;
+  width: 800px;
 }
 
 #footer-container {
@@ -149,12 +158,16 @@ Realizzato da Paolo Marchetti @ Riot Design*/
   }
 }
 
-
 .container1 {
     margin-right: auto;
     margin-left: auto;
     padding-left: 45px;
     padding-right: 45px;
+}
+
+.container2 {
+    margin-right: 30%;
+    margin-left: 30%;    
 }
 
 /*  CONTENT CLASS */
@@ -789,6 +802,11 @@ section.blu p {
   box-align: center;
 }
 
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 100%;
+}
+
 .centra-questo {
   z-index: 1;
   position: relative;
@@ -891,7 +909,7 @@ section.blu p {
   transition-timing-function: ease-out;
   transition-duration: 2000ms;
   width: 100%;
-  height: auto;
+  /*height: 100%;*/
 }
 
 .media:hover div.media-img img {
@@ -3667,7 +3685,7 @@ h3 {
 }
 
 section {
-  padding: 90px 0;
+  padding: 30px 50px;
 }
 
 
