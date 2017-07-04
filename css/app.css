@@ -26,6 +26,22 @@ a:hover {
   width: 45px;
 }
 
+#inputEmail3, #inputPassword3 {
+  width: 70%;
+  border: 2px solid #49BEB7;
+}
+
+.form-horizontal textarea {
+  border: 2px solid #49BEB7;
+}
+
+.btn-default2 {
+  border: 2px solid #49BEB7;
+  background-color: #49BEB7;
+  cursor: pointer;
+  user-select: none;
+}
+
 .span8 {
   background: #3B5998;
   color: white;
