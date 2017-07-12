@@ -76,7 +76,7 @@ a:hover {
 
 #header-container,
 #info-container {
-  background-color: #FC345C;
+  background-color: #F6378F;
   color: white;
 }
 
@@ -90,11 +90,11 @@ a:hover {
 }
 
 .form-control:focus {
-  border-color: #FC345C;
+  border-color: #F6378F;
 }
 
 .btn.btn-platzi {
-  background-color: #FC345C;
+  background-color: #F6378F;
   color: white;
 }
 
@@ -165,8 +165,8 @@ a:hover {
 }
 
 #productos-container .list-group-item-action.active {
-  background-color: #FC345C;
-  border-color: #FC345C;
+  background-color: #F6378F;
+  border-color: #F6378F;
 }
 
 #productos-container .list-group+.list-group {
@@ -184,8 +184,8 @@ a:hover {
 }
 
 .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
-  background-color: #FC345C;
-  border-color: #FC345C;
+  background-color: #F6378F;
+  border-color: #F6378F;
 }
 
 .page-link, .page-link:focus, .page-link:hover {
