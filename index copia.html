@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-flex.min.css">
+    <script src="https://use.fontawesome.com/5765211a64.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+<!-- arriba -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#arriba').click(function(){ //Id del elemento cliqueable
+    $('html, body').animate({scrollTop:0}, 'slow');
+    return false;
+  });
+});
+</script>
+<!-- /arriba -->
+<!-- enlace interno -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/stickyMojo.js"></script>
+<script type="text/javascript">
+$(document).ready(function() { 
+
+    $('.ancla').click(function(){
+        var link = $(this);
+        var anchor  = link.attr('href');
+        $('html, body').stop().animate({
+            scrollTop: jQuery(anchor).offset().top
+        }, 1000);
+        return false;
+    });
+});
+</script>
+
+
+
+<!-- /Enlace interno -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header-container">
+      <div class="container">
+        <div class="row flex-items-xs-middle flex-items-xs-between">
+          <div class="col-xs-6">
+            <img class="hidden-md-up" src="images/log.png" alt="First slide" height="100">
+            <h1 class="pull-xs-left hidden-xs-down">VosLoEncontras</h1>
+          </div>
+          <div class="col-xs-3">
+            <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+              &#9776;
+            </button>
+            <a id="a" href="#" class="hidden-md-down text-uppercase font-weight-bold pull-sm-right">Regístrate</a>
+          </div>
+          <span class="hidden-md-down text-uppercase font-weight-bold pull-sm-right">Llámanos: 3135328897</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- /Header -->
+
+    <!-- Menu -->
+
+    <div id="menu-container">
+      <nav id="navMenu" class="navbar-toggleable-xs navbar navbar-light collapse">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-xs-12 offset-md-2 hidden-xs-down">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+                  <span class="input-group-btn">
+                    <button class="btn btn-platzi" type="button">
+                      <span class="hidden-sm-down">Buscar</span>
+                      <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+            <div class="container">
+            <div class="row">
+            <div class="col-xs-12">
+              <div class="nav-container text-xs-center text-md-left">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item text-xs-center active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link ancla" href="#section">Categorías</a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link" href="#">Empleo</a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link" href="#">Obsequios</a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link" href="#">Ofertas</a>
+                  </li>
+                  <li class="nav-item hidden-sm-up text-xs-center">
+                    <a class="nav-link" href="#">Registrate</a>
+                  </li>
+                  <hr class="hidden-sm-up">
+                  <span class="hidden-sm-up">Categoria por ciudad</span>
+                  <li class="nav-item text-xs-center hidden-sm-up">
+                    <a class="nav-link" data-toggle="tab" href="#ocaña" role="tab" aria-controls="ocaña">Ocaña<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item text-xs-center hidden-sm-up">
+                    <a class="nav-link" data-toggle="tab" href="#abrego" role="tab" aria-controls="abrego">Abrego</a>
+                  </li>
+                  <li class="nav-item text-xs-center hidden-sm-up">
+                    <a class="nav-link" data-toggle="tab" href="#laplaya" role="tab" aria-controls="laplaya">La Playa de Belén</a>
+                  </li>
+                  <li class="nav-item text-xs-center hidden-sm-up">
+                    <a class="nav-link" data-toggle="tab" href="#convencion" role="tab" aria-controls="convencion">Convención</a>
+                  </li>
+                  <li class="nav-item text-xs-center hidden-sm-up">
+                    <a class="nav-link" data-toggle="tab" href="#riodeoro" role="tab" aria-controls="riodeoro">Río de Oro</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+            <!-- <div class="col-md-10 col-xs-12 offset-md-2 hidden-xs-down">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+                  <span class="input-group-btn">
+                    <button class="btn btn-platzi" type="button">
+                      <span class="hidden-sm-down">Buscar</span>
+                      <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div id="menu-container">
+      <nav id="navMenu" class="navbar-toggleable-xs navbar navbar-light collapse hidden-xs-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="nav-container text-xs-center text-md-left">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item text-xs-center active">
+                    <a class="nav-link active" data-toggle="tab" href="#ocaña" role="tab" aria-controls="ocaña">Ocaña<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link" data-toggle="tab" href="#abrego" role="tab" aria-controls="abrego">Abrego</a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link" data-toggle="tab" href="#laplaya" role="tab" aria-controls="laplaya">La Playa de Belén</a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link" data-toggle="tab" href="#convencion" role="tab" aria-controls="convencion">Convención</a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link" data-toggle="tab" href="#riodeoro" role="tab" aria-controls="riodeoro">Río de Oro</a>
+                  </li>
+                  <li class="nav-item hidden-sm-up text-xs-center">
+                    <a class="nav-link" href="#">Regístrate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           <!--  <div class="col-md-6 col-xs-12 offset-md-2 hidden-xs-down">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+                  <span class="input-group-btn">
+                    <button class="btn btn-platzi" type="button">
+                      <span class="hidden-sm-down">Buscar</span>
+                      <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div> -->
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+
+
+      <div id="search-bar" class="container hidden-sm-up">
+        <div class="row">
+            <div class="col-xs-12">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+                  <span class="input-group-btn">
+                    <button class="btn btn-platzi" type="button">
+                      <span class="hidden-sm-down">Buscar</span>
+                      <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- /Menu -->
+
+    <!-- Carousel -->
+
+    <div id="carousel-container">
+      <div id="productsCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#productsCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#productsCarousel" data-slide-to="1"></li>
+          <li data-target="#productsCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="images/ima1.jpeg" alt="First slide" height="50">
+            <div class="carousel-caption">
+              <h3>Primer producto</h3>
+              <p class="hidden-sm-down">Con este producto egestas, nisi a efficitur porttitor, libero nisi viverra arcu, semper accumsan lectus est sit amet diam. Donec eget massa in arcu mattis laoreet id vel libero. Etiam tristique fermentum sem</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/ima2.jpeg" alt="Second slide">
+            <div class="carousel-caption">
+              <h3>Segundo producto</h3>
+              <p class="hidden-sm-down">Con este producto tempus id porta vel, blandit at ex. Mauris dignissim feugiat quam, vitae blandit metus auctor vitae. Maecenas ut varius ipsum, sed bibendum metus. In tristique a ante ac ornare</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/ima3.jpeg" alt="Third slide">
+            <div class="carousel-caption">
+              <h3>Tercer producto</h3>
+              <p class="hidden-sm-down">Con este producto ut convallis dui. Phasellus id mi aliquam, euismod dolor sit amet, maximus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#productsCarousel" role="button" data-slide="prev">
+          <span class="icon-prev" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#productsCarousel" role="button" data-slide="next">
+          <span class="icon-next" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- <div class="busca">
+      <div class="row">
+        <div class="hidden-xs-down">
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+              <span class="input-group-btn">
+                <button class="btn btn-platzi" type="button">
+                  <span class="hidden-sm-down">Buscar</span>
+                  <i class="fa fa-search hidden-md-up"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- /Carousel -->
+    
+    <!-- section -->
+
+<section class="grigio">
+  <div class="container1">
+    <div id="section" class="presentazione" align="center">
+      <h2 id="section"><center>Selecciona la categoría de tu interés</center></h2>
+      <p><center>Somos una empresa Ocañera que busca proyectar sus anunciantes en la región y el mundo.</center></p>
+        <!-- Menu Pestaña -->
+
+
+        <!-- Menu Municipios-->
+
+    <div id="menu-container">
+      <nav id="navMenu" class="navbar-toggleable-xs navbar navbar-light collapse hidden-xs-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="nav-container text-xs-center text-md-left">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item text-xs-center active">
+                    <a class="nav-link active" data-toggle="tab" href="#ocaña" role="tab" aria-controls="ocaña">Ocaña<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link" data-toggle="tab" href="#abrego" role="tab" aria-controls="abrego">Abrego</a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link" data-toggle="tab" href="#laplaya" role="tab" aria-controls="laplaya">La Playa de Belén</a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link" data-toggle="tab" href="#convencion" role="tab" aria-controls="convencion">Convención</a>
+                  </li>
+                  <li class="nav-item text-xs-center">
+                    <a class="nav-link" data-toggle="tab" href="#riodeoro" role="tab" aria-controls="riodeoro">Río de Oro</a>
+                  </li>
+                  <li class="nav-item hidden-sm-up text-xs-center">
+                    <a class="nav-link" href="#">Regístrate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           <!--  <div class="col-md-6 col-xs-12 offset-md-2 hidden-xs-down">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+                  <span class="input-group-btn">
+                    <button class="btn btn-platzi" type="button">
+                      <span class="hidden-sm-down">Buscar</span>
+                      <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div> -->
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- /Menu Municipios -->
+
+
+
+          <ul class="nav nav-tabs container2 hidden-xs-down" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#ocaña" role="tab" aria-controls="ocaña">Ocaña</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#abrego" role="tab" aria-controls="abrego">Abrego</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#laplaya" role="tab" aria-controls="laplaya">La Playa de Belén</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#convencion" role="tab" aria-controls="convencion">Convención</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#riodeoro" role="tab" aria-controls="riodeoro">Río de Oro</a>
+            </li>
+          </ul> 
+
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="ocaña" role="tabpanel">
+              <h2>Ocaña</h2>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="comercio.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/2233.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="comercio.html">Comercio</a>
+                          </h4>
+                          <p class="hidden-sm">Aquí encontrarás el comercio en general de la ciudad</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="restaurantes.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/res.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="restaurantes.html">Restaurante Bar</a>
+                          </h4>
+                          <p class="hidden-sm">Estos son los restaurantes y bares de tu preferencia</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="entretenimiento.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/happy.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="entretenimiento.html">Entretenimiento</a>
+                          </h4>
+                          <p class="hidden-sm">Los mejores sitios de entretenimiento los encontrarás aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="salud.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/salud.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="salud.html">Salud</a>
+                          </h4>
+                          <p class="hidden-sm">Los mejores consultorios y profesionales de la salud aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row ">
+                        <div class="media-img pull-left   col-sm-5 col-md-4 ">
+                          <div class="img-overlay  "> 
+                            <a  class="btn  btn-primary  animated fadeInUp needsclick" href="belleza.html" rel="bookmark">Entrar</a> 
+                          </div>
+                            <img src="images/belleza.png" alt="Web Design and Graphic Design Portfolio"  width="150" height="150" /> 
+                          </div>
+                          <div class="media-body   col-sm-7  col-md-8 ">
+                            <h4 class="media-heading"> 
+                              <a href="belleza.html">Belleza y estilo</a></h4>
+                            <p class="hidden-sm">Salones de belleza, centros de estética y mucho más</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="servicios.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/service.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="servicios.html">Servicios</a>
+                          </h4>
+                          <p class="hidden-sm">Todo lo relacionado con servicios generales como modisterias, reparación, talleres, etc.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="transporte.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/trans.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="transporte.html">Transporte</a>
+                          </h4>
+                          <p class="hidden-sm">Las empresas de transporte más reconocidas estan aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="profesionales.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circlse" src="images/profesionales.jpg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="profesionales.html">Profesionales</a>
+                          </h4>
+                          <p class="hidden-sm">Los profesionales más reconocidos de todas las áreas los encuentras aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="construccion.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circlse" src="images/constru.png" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="construccion.html">Construccion</a>
+                          </h4>
+                          <p class="hidden-sm">Constructoras, ferreterias y más podrás encontrarlos aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="turismo.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circles" src="images/turis.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="turismo.html">Turismo</a>
+                          </h4>
+                          <p class="hidden-sm">Agencias de viajes y turismo aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="tecnologia.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/portatil.jpeg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="tecnologia.html">Tecnología</a>
+                          </h4>
+                          <p class="hidden-sm">Equipos de cómputo, celulares y más los encontrarás aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="super.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circles" src="images/super.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="super.html">Supermercados</a>
+                          </h4>
+                          <p class="hidden-sm">Supermercados, autoservicios y demás venta de vivieres y abarrotes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-sm-4">
+                      <div class="media">
+                        <div class="row ">
+                          <div class="media-img  pull-left   col-sm-5 col-md-4 ">
+                            <div class="img-overlay "> <a  class="btn  btn-primary  animated fadeInUp needsclick" href="deportes.html" rel="bookmark">Entrar</a> 
+                            </div>
+                            <img src="images/deportes.png" alt="Contacts for our agency in Empoli, Florence (Italy)"  width="150" height="150" /> 
+                            </div>
+                            <div class="media-body  col-sm-7 col-md-8 ">
+                              <h4 class="media-heading"><a href="deportes.html">Deportes</a></h4>
+                              <p class="hidden-sm">Todo en deportes y más aquí</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="abrego" role="tabpanel">
+                    <h2>Abrego</h2>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="comercio.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/2233.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="comercio.html">Comercio</a>
+                          </h4>
+                          <p class="hidden-sm">Aquí encontrarás el comercio en general de la ciudad</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="restaurantes.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/res.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="restaurantes.html">Restaurante Bar</a>
+                          </h4>
+                          <p class="hidden-sm">Estos son los restaurantes y bares de tu preferencia</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="entretenimiento.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/happy.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="entretenimiento.html">Entretenimiento</a>
+                          </h4>
+                          <p class="hidden-sm">Los mejores sitios de entretenimiento los encontrarás aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="salud.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/salud.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="salud.html">Salud</a>
+                          </h4>
+                          <p class="hidden-sm">Los mejores consultorios y profesionales de la salud aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row ">
+                        <div class="media-img pull-left   col-sm-5 col-md-4 ">
+                          <div class="img-overlay  "> 
+                            <a  class="btn  btn-primary  animated fadeInUp needsclick" href="belleza.html" rel="bookmark">Entrar</a> 
+                          </div>
+                            <img src="images/belleza.png" alt="Web Design and Graphic Design Portfolio"  width="150" height="150" /> 
+                          </div>
+                          <div class="media-body   col-sm-7  col-md-8 ">
+                            <h4 class="media-heading"> 
+                              <a href="belleza.html">Belleza y estilo</a></h4>
+                            <p class="hidden-sm">Salones de belleza, centros de estética y mucho más</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="servicios.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/service.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="servicios.html">Servicios</a>
+                          </h4>
+                          <p class="hidden-sm">Todo lo relacionado con servicios generales como modisterias, reparación, talleres, etc.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="transporte.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/trans.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="transporte.html">Transporte</a>
+                          </h4>
+                          <p class="hidden-sm">Las empresas de transporte más reconocidas estan aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="profesionales.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circlse" src="images/profesionales.jpg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="profesionales.html">Profesionales</a>
+                          </h4>
+                          <p class="hidden-sm">Los profesionales más reconocidos de todas las áreas los encuentras aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="construccion.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circlse" src="images/constru.png" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="construccion.html">Construccion</a>
+                          </h4>
+                          <p class="hidden-sm">Constructoras, ferreterias y más podrás encontrarlos aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="turismo.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circles" src="images/turis.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="turismo.html">Turismo</a>
+                          </h4>
+                          <p class="hidden-sm">Agencias de viajes y turismo aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="tecnologia.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/portatil.jpeg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="tecnologia.html">Tecnología</a>
+                          </h4>
+                          <p class="hidden-sm">Equipos de cómputo, celulares y más los encontrarás aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="super.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circles" src="images/super.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="super.html">Supermercados</a>
+                          </h4>
+                          <p class="hidden-sm">Supermercados, autoservicios y demás venta de vivieres y abarrotes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-sm-4">
+                      <div class="media">
+                        <div class="row ">
+                          <div class="media-img  pull-left   col-sm-5 col-md-4 ">
+                            <div class="img-overlay "> <a  class="btn  btn-primary  animated fadeInUp needsclick" href="deportes.html" rel="bookmark">Entrar</a> 
+                            </div>
+                            <img src="images/deportes.png" alt="Contacts for our agency in Empoli, Florence (Italy)"  width="150" height="150" /> 
+                            </div>
+                            <div class="media-body  col-sm-7 col-md-8 ">
+                              <h4 class="media-heading"><a href="deportes.html">Deportes</a></h4>
+                              <p class="hidden-sm">Todo en deportes y más aquí</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="laplaya" role="tabpanel">
+                    <h2>La Playa de Belén</h2>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="comercio.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/2233.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="comercio.html">Comercio</a>
+                          </h4>
+                          <p class="hidden-sm">Aquí encontrarás el comercio en general de la ciudad</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="restaurantes.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/res.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="restaurantes.html">Restaurante Bar</a>
+                          </h4>
+                          <p class="hidden-sm">Estos son los restaurantes y bares de tu preferencia</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="entretenimiento.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/happy.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="entretenimiento.html">Entretenimiento</a>
+                          </h4>
+                          <p class="hidden-sm">Los mejores sitios de entretenimiento los encontrarás aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="salud.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/salud.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="salud.html">Salud</a>
+                          </h4>
+                          <p class="hidden-sm">Los mejores consultorios y profesionales de la salud aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row ">
+                        <div class="media-img pull-left   col-sm-5 col-md-4 ">
+                          <div class="img-overlay  "> 
+                            <a  class="btn  btn-primary  animated fadeInUp needsclick" href="belleza.html" rel="bookmark">Entrar</a> 
+                          </div>
+                            <img src="images/belleza.png" alt="Web Design and Graphic Design Portfolio"  width="150" height="150" /> 
+                          </div>
+                          <div class="media-body   col-sm-7  col-md-8 ">
+                            <h4 class="media-heading"> 
+                              <a href="belleza.html">Belleza y estilo</a></h4>
+                            <p class="hidden-sm">Salones de belleza, centros de estética y mucho más</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="servicios.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/service.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="servicios.html">Servicios</a>
+                          </h4>
+                          <p class="hidden-sm">Todo lo relacionado con servicios generales como modisterias, reparación, talleres, etc.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="transporte.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/trans.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="transporte.html">Transporte</a>
+                          </h4>
+                          <p class="hidden-sm">Las empresas de transporte más reconocidas estan aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="profesionales.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circlse" src="images/profesionales.jpg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="profesionales.html">Profesionales</a>
+                          </h4>
+                          <p class="hidden-sm">Los profesionales más reconocidos de todas las áreas los encuentras aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="construccion.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circlse" src="images/constru.png" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="construccion.html">Construccion</a>
+                          </h4>
+                          <p class="hidden-sm">Constructoras, ferreterias y más podrás encontrarlos aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="turismo.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circles" src="images/turis.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="turismo.html">Turismo</a>
+                          </h4>
+                          <p class="hidden-sm">Agencias de viajes y turismo aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="tecnologia.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/portatil.jpeg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="tecnologia.html">Tecnología</a>
+                          </h4>
+                          <p class="hidden-sm">Equipos de cómputo, celulares y más los encontrarás aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="super.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circles" src="images/super.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="super.html">Supermercados</a>
+                          </h4>
+                          <p class="hidden-sm">Supermercados, autoservicios y demás venta de vivieres y abarrotes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-sm-4">
+                      <div class="media">
+                        <div class="row ">
+                          <div class="media-img  pull-left   col-sm-5 col-md-4 ">
+                            <div class="img-overlay "> <a  class="btn  btn-primary  animated fadeInUp needsclick" href="deportes.html" rel="bookmark">Entrar</a> 
+                            </div>
+                            <img src="images/deportes.png" alt="Contacts for our agency in Empoli, Florence (Italy)"  width="150" height="150" /> 
+                            </div>
+                            <div class="media-body  col-sm-7 col-md-8 ">
+                              <h4 class="media-heading"><a href="deportes.html">Deportes</a></h4>
+                              <p class="hidden-sm">Todo en deportes y más aquí</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="convencion" role="tabpanel">
+                    <h2>Convención</h2>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="comercio.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/2233.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="comercio.html">Comercio</a>
+                          </h4>
+                          <p class="hidden-sm">Aquí encontrarás el comercio en general de la ciudad</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="restaurantes.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/res.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="restaurantes.html">Restaurante Bar</a>
+                          </h4>
+                          <p class="hidden-sm">Estos son los restaurantes y bares de tu preferencia</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="entretenimiento.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/happy.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="entretenimiento.html">Entretenimiento</a>
+                          </h4>
+                          <p class="hidden-sm">Los mejores sitios de entretenimiento los encontrarás aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="salud.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/salud.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="salud.html">Salud</a>
+                          </h4>
+                          <p class="hidden-sm">Los mejores consultorios y profesionales de la salud aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row ">
+                        <div class="media-img pull-left   col-sm-5 col-md-4 ">
+                          <div class="img-overlay  "> 
+                            <a  class="btn  btn-primary  animated fadeInUp needsclick" href="belleza.html" rel="bookmark">Entrar</a> 
+                          </div>
+                            <img src="images/belleza.png" alt="Web Design and Graphic Design Portfolio"  width="150" height="150" /> 
+                          </div>
+                          <div class="media-body   col-sm-7  col-md-8 ">
+                            <h4 class="media-heading"> 
+                              <a href="belleza.html">Belleza y estilo</a></h4>
+                            <p class="hidden-sm">Salones de belleza, centros de estética y mucho más</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="servicios.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/service.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="servicios.html">Servicios</a>
+                          </h4>
+                          <p class="hidden-sm">Todo lo relacionado con servicios generales como modisterias, reparación, talleres, etc.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="transporte.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/trans.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="transporte.html">Transporte</a>
+                          </h4>
+                          <p class="hidden-sm">Las empresas de transporte más reconocidas estan aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="profesionales.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circlse" src="images/profesionales.jpg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="profesionales.html">Profesionales</a>
+                          </h4>
+                          <p class="hidden-sm">Los profesionales más reconocidos de todas las áreas los encuentras aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="construccion.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circlse" src="images/constru.png" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="construccion.html">Construccion</a>
+                          </h4>
+                          <p class="hidden-sm">Constructoras, ferreterias y más podrás encontrarlos aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="turismo.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circles" src="images/turis.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="turismo.html">Turismo</a>
+                          </h4>
+                          <p class="hidden-sm">Agencias de viajes y turismo aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="tecnologia.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/portatil.jpeg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="tecnologia.html">Tecnología</a>
+                          </h4>
+                          <p class="hidden-sm">Equipos de cómputo, celulares y más los encontrarás aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="super.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circles" src="images/super.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="super.html">Supermercados</a>
+                          </h4>
+                          <p class="hidden-sm">Supermercados, autoservicios y demás venta de vivieres y abarrotes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-sm-4">
+                      <div class="media">
+                        <div class="row ">
+                          <div class="media-img  pull-left   col-sm-5 col-md-4 ">
+                            <div class="img-overlay "> <a  class="btn  btn-primary  animated fadeInUp needsclick" href="deportes.html" rel="bookmark">Entrar</a> 
+                            </div>
+                            <img src="images/deportes.png" alt="Contacts for our agency in Empoli, Florence (Italy)"  width="150" height="150" /> 
+                            </div>
+                            <div class="media-body  col-sm-7 col-md-8 ">
+                              <h4 class="media-heading"><a href="deportes.html">Deportes</a></h4>
+                              <p class="hidden-sm">Todo en deportes y más aquí</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="riodeoro" role="tabpanel">
+                    <h2>Río de Oro</h2>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="comercio.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/2233.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="comercio.html">Comercio</a>
+                          </h4>
+                          <p class="hidden-sm">Aquí encontrarás el comercio en general de la ciudad</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="restaurantes.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/res.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="restaurantes.html">Restaurante Bar</a>
+                          </h4>
+                          <p class="hidden-sm">Estos son los restaurantes y bares de tu preferencia</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="entretenimiento.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/happy.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="entretenimiento.html">Entretenimiento</a>
+                          </h4>
+                          <p class="hidden-sm">Los mejores sitios de entretenimiento los encontrarás aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="salud.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/salud.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="salud.html">Salud</a>
+                          </h4>
+                          <p class="hidden-sm">Los mejores consultorios y profesionales de la salud aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row ">
+                        <div class="media-img pull-left   col-sm-5 col-md-4 ">
+                          <div class="img-overlay  "> 
+                            <a  class="btn  btn-primary  animated fadeInUp needsclick" href="belleza.html" rel="bookmark">Entrar</a> 
+                          </div>
+                            <img src="images/belleza.png" alt="Web Design and Graphic Design Portfolio"  width="150" height="150" /> 
+                          </div>
+                          <div class="media-body   col-sm-7  col-md-8 ">
+                            <h4 class="media-heading"> 
+                              <a href="belleza.html">Belleza y estilo</a></h4>
+                            <p class="hidden-sm">Salones de belleza, centros de estética y mucho más</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="servicios.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/service.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="servicios.html">Servicios</a>
+                          </h4>
+                          <p class="hidden-sm">Todo lo relacionado con servicios generales como modisterias, reparación, talleres, etc.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="transporte.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/trans.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="transporte.html">Transporte</a>
+                          </h4>
+                          <p class="hidden-sm">Las empresas de transporte más reconocidas estan aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="profesionales.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circlse" src="images/profesionales.jpg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="profesionales.html">Profesionales</a>
+                          </h4>
+                          <p class="hidden-sm">Los profesionales más reconocidos de todas las áreas los encuentras aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="construccion.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circlse" src="images/constru.png" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="construccion.html">Construccion</a>
+                          </h4>
+                          <p class="hidden-sm">Constructoras, ferreterias y más podrás encontrarlos aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="turismo.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circles" src="images/turis.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="turismo.html">Turismo</a>
+                          </h4>
+                          <p class="hidden-sm">Agencias de viajes y turismo aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="tecnologia.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img src="images/portatil.jpeg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="tecnologia.html">Tecnología</a>
+                          </h4>
+                          <p class="hidden-sm">Equipos de cómputo, celulares y más los encontrarás aquí</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="media">
+                      <div class="row">
+                        <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                          <div class="img-overlay "> 
+                            <a class="btn  btn-primary  animated fadeInUp " href="super.html" rel="bookmark">Entrar</a> 
+                          </div>
+                          <img class="img-circles" src="images/super.svg" alt="About"  width="150" height="150" /> 
+                        </div>
+                        <div class="media-body col-sm-7 col-md-8">
+                          <h4 class="media-heading"> 
+                            <a href="super.html">Supermercados</a>
+                          </h4>
+                          <p class="hidden-sm">Supermercados, autoservicios y demás venta de vivieres y abarrotes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-sm-4">
+                      <div class="media">
+                        <div class="row ">
+                          <div class="media-img  pull-left   col-sm-5 col-md-4 ">
+                            <div class="img-overlay "> <a  class="btn  btn-primary  animated fadeInUp needsclick" href="deportes.html" rel="bookmark">Entrar</a> 
+                            </div>
+                            <img src="images/deportes.png" alt="Contacts for our agency in Empoli, Florence (Italy)"  width="150" height="150" /> 
+                            </div>
+                            <div class="media-body  col-sm-7 col-md-8 ">
+                              <h4 class="media-heading"><a href="deportes.html">Deportes</a></h4>
+                              <p class="hidden-sm">Todo en deportes y más aquí</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- /Menu Pestaña -->
+    </div>
+  </div>
+</section>
+<a href='#' id='arriba'>Volver arriba &uarr;</a>
+
+<!-- /.wrap -->
+
+    <!-- /section -->
+
+
+<!-- ficha -->
+ 
+
+<!-- /ficha -->
+
+    <!-- /Carousel -->
+
+    <!-- Información -->
+
+    <div id="info-container">
+      <div class="container">
+        <div class="row flex-items-xs-middle">
+          <div class="col-md-4">
+            <img src="images/calidad.png" alt="Calidad" class="img-fluid">
+            <h4>Calidad</h4>
+          </div>
+          <div class="col-md-4">
+            <img src="images/envio.png" alt="Envío gratis" class="img-fluid">
+            <h4>Envío gratis</h4>
+          </div>
+          <div class="col-md-4">
+            <img src="images/soporte.png" alt="Soporte" class="img-fluid">
+            <h4>Soporte 24hs</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /Información -->
+
+    <!-- Footer -->
+
+    <div id="footer-container">
+      <div class="container">
+        <div class="row text-xs-center text-sm-left">
+          <div class="col-md-4">
+            <form id="suscribeForm" action="#" method="POST">
+              <h4 class="text-uppercase">¿Quiéres recibir todas las novedades?</h4>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="tu@correo.com" name="email">
+                <small id="emailHelp" class="form-text text-muted">No compartiremos tu información con nadie más</small>
+              </div>
+              <button type="submit" class="btn btn-primary form-text">Suscribirme</button>
+            </form>
+          </div>
+          <div class="col-md-3 offset-md-5">
+            <h4 class="navigation">Navegación</h4>
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Carrito</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /Footer -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+<script type='text/javascript' src='/assets/js/plugins.js'></script>
+<script type='text/javascript' src='/assets/js/main.js'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js'></script>
+<script type='text/javascript' src='/js/tab.js'></script>
+</body>
+</html>

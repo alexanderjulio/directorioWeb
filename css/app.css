@@ -3,7 +3,7 @@ body {
 }
 
 a {
-  color: #49BEB7;
+  color: #9C4B9E;
 }
 
 a:hover {
@@ -28,16 +28,66 @@ a:hover {
 
 #inputEmail3, #inputPassword3 {
   width: 70%;
-  border: 2px solid #49BEB7;
+  border: 2px solid #BBDC2F;
+}
+
+#a {
+  color: #BBDC2F;
+}
+
+#login {
+  background-image: url(../images/login.jpg);
+  background-size: 100%;
+  /*width: 100%;*/
+  height: auto;
+  /*position: absolute;*/
+  padding-bottom: 100px;
+
+}
+
+@media screen and (max-width: 728px).cont-input {
+    width: 100%;
+    clear: both;
+}
+
+.cont-input {
+    padding-bottom: 10px;
+}
+
+.inp-txt-1 {
+    border: 1px solid;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+/*span.btnAdd {
+    float: left;
+    background-image: url(App_Theme/images/Maestro-IMG.png);
+    cursor: pointer;
+    background-color: #C9E4F9;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: #ffffff solid;
+    border-width: 1px;
+}*/
+
+
+#menu {
+  color: #fff;
+}
+
+#a:hover {
+  color: #fff;
 }
 
 .form-horizontal textarea {
-  border: 2px solid #49BEB7;
+  border: 2px solid #BBDC2F;
 }
 
 .btn-default2 {
-  border: 2px solid #49BEB7;
-  background-color: #49BEB7;
+  border: 2px solid #BBDC2F;
+  background-color: #BBDC2F;
   cursor: pointer;
   user-select: none;
 }
@@ -51,13 +101,13 @@ a:hover {
 }
 
 .line {
-  background: #49BEB7;
+  background: #BBDC2F;
   padding-top: 15px;
   padding-left: 50px;
 }
 
 .panel-primary {
-  background: #49BEB7;
+  background: #BBDC2F;
   padding-top: 15px;
   padding-bottom: 1px;
   border-radius: 5px;
@@ -66,7 +116,7 @@ a:hover {
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover {
-  background-color: #49BEB7;
+  background-color: #BBDC2F;
   position: relative;
   border-top: solid;
   border-left: solid;
@@ -76,12 +126,13 @@ a:hover {
 
 #header-container,
 #info-container {
-  background-color: #F6378F;
+  background-color: #9C4B9E;
   color: white;
+  padding: 30px;
 }
 
 #menu-container {
-  background-color: #49BEB7; f7f7f9
+  background-color: #BBDC2F; f7f7f9
 }
 
 #menu-container .nav-container .nav {
@@ -90,11 +141,11 @@ a:hover {
 }
 
 .form-control:focus {
-  border-color: #F6378F;
+  border-color: #9C4B9E;
 }
 
 .btn.btn-platzi {
-  background-color: #F6378F;
+  background-color: #9C4B9E;
   color: white;
 }
 
@@ -121,7 +172,7 @@ a:hover {
 
 #productsCarousel img {
   margin: 0 auto;
-  height: 400px;
+  height: 300px;
   width: 800px;
 }
 
@@ -165,8 +216,8 @@ a:hover {
 }
 
 #productos-container .list-group-item-action.active {
-  background-color: #F6378F;
-  border-color: #F6378F;
+  background-color: #9C4B9E;
+  border-color: #9C4B9E;
 }
 
 #productos-container .list-group+.list-group {
@@ -184,8 +235,8 @@ a:hover {
 }
 
 .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
-  background-color: #F6378F;
-  border-color: #F6378F;
+  background-color: #9C4B9E;
+  border-color: #9C4B9E;
 }
 
 .page-link, .page-link:focus, .page-link:hover {
@@ -302,7 +353,7 @@ html {
 
 body {
   /*background: #323C46;*/
-  -webkit-font-smoothing: antialiased;
+  /*-webkit-font-smoothing: antialiased;*/
 }
 
 h1 {
@@ -336,7 +387,7 @@ h5 {
 
 h6 {
   font-size: 13px;
-  font-weight: 700;
+  /*font-weight: 700;*/
   text-transform: none;
 }
 
@@ -366,6 +417,10 @@ fieldset[disabled] .btn-primary.active {
     border: none !important;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: #9C4B9E;
+    padding-top: 15px;
+}
 
 .form-control {
 
@@ -491,7 +546,7 @@ fieldset[disabled] .btn-primary.active {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1px;
-  opacity: 0.65;
+  /*opacity: 0.65;*/
   filter: alpha(opacity=65);
   display: block;
   background: rgba(255,255,255,0);
@@ -878,7 +933,7 @@ section.blu p {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding-top: 50%;
+  padding-top: 30%;
   text-align: center;
   z-index: 4;
   -webkit-transition: opacity 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
@@ -933,7 +988,7 @@ section.blu p {
 }
 
 .media-body {
-  padding: 20px 30px 10px 35px;
+  padding: 20px 30px 10px 15px;
 }
 
 .media div.pull-left {
@@ -1049,12 +1104,12 @@ section.page-header {
 }
 
 .btn {
-  background: transparent;
+  /*background: transparent;*/
   -webkit-transition: all 0.2s ease-out;  /* Chrome 1-25, Safari 3.2+ */
   -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
   -o-transition: all 0.1s ease-out;  /* Opera 10.50â€“12.00 */
   transition: all 0.1s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
-  border-radius: 0;
+  border-radius: 5px;
   border-width: 2px;
 }
 
