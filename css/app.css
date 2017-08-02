@@ -153,6 +153,14 @@ a:hover {
   background-color: #8ab542;
 }
 
+.volver {
+    color: #ebebeb;
+    font-size: 1.2rem;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: #1c3643;
+}
+
 .carousel-inner>.carousel-item>a>img, .carousel-inner>.carousel-item>img, .img-fluid {
   height: 250px;
 }
