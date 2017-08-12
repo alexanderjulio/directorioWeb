@@ -1,19 +1,27 @@
 <?php
-
-$user = null;
-$query = null;
+require_once 'config.php';
+$result = false;
 
 if (!empty($_POST)) {
-    require_once 'config.php';
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $email = $_POST['email'];
+    
 
-    $query = "SELECT * FROM users WHERE email = :email AND password = :password";
-    $prepared = $pdo->prepare($query);
-    $prepared->execute([
-        'email' => $_POST['email'],
-        'password' => md5($_POST['password'])
+    // Never use md5 to store passwords!!!
+    $password = md5($_POST['password']);
+
+    // Validate
+
+    $sql = "INSERT INTO users(nombre, apellido, email, password) VALUES (:nombre, :apellido, :email, :password)";
+    $query = $pdo->prepare($sql);
+
+    $result = $query->execute([
+        'nombre' => $nombre,
+        'apellido' => $apellido,
+        'email' => $email,
+        'password' => $password
     ]);
-
-    $user = $prepared->fetch(PDO::FETCH_ASSOC);
 }
 
 ?>
@@ -39,6 +47,7 @@ if (!empty($_POST)) {
         <div class="row flex-items-xs-middle flex-items-xs-between">
           <div class="col-xs-6">
             <img class="hidden-md-up" src="images/log.png" alt="First slide" height="100">
+            <h1 class="pull-xs-left hidden-xs-down">VosLoEncontras</h1>
           </div>
           <div class="col-xs-3">
             <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +55,7 @@ if (!empty($_POST)) {
             </button>
             
           </div>
-          <span class="hidden-md-down font-weight-bold pull-sm-right">porqueTUlotienes</span>
+          <span class="hidden-md-down text-uppercase font-weight-bold pull-sm-right">Llámanos: 3135328897</span>
         </div>
       </div>
     </header>
@@ -69,13 +78,13 @@ if (!empty($_POST)) {
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item text-xs-center">
-                    <a class="nav-link" href="empleo.html">Empleo</a>
+                    <a class="nav-link" href="#">Empleo</a>
                   </li>
                   <li class="nav-item text-xs-center">
-                    <a class="nav-link" href="obsequios.html">Obsequios</a>
+                    <a class="nav-link" href="#">Obsequios</a>
                   </li>
                   <li class="nav-item text-xs-center">
-                    <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    <a class="nav-link" href="#">Ofertas</a>
                   </li>
                 </ul>
               </div>
@@ -96,7 +105,10 @@ if (!empty($_POST)) {
 <section id="login" class="grigio">
   <div class="container1">
     <div id="section" class="presentazione" align="center">
-      
+      <!-- <h2 id="section"><center>Selecciona la categoría de tu interés</center></h2>
+      <p><center>Somos una empresa Ocañera que busca proyectar sus anunciantes en la región y el mundo.</center></p> -->
+        <!-- Menu Pestaña -->
+
         <!-- Menu Municipios-->
 
     <div id="menu-container">
@@ -122,7 +134,7 @@ if (!empty($_POST)) {
                     <a class="nav-link" data-toggle="tab" href="#riodeoro" role="tab" aria-controls="riodeoro">Río de Oro</a>
                   </li>
                   <li class="nav-item hidden-sm-up text-xs-center">
-                    <a class="nav-link" href="registro.html">Regístrate</a>
+                    <a class="nav-link" href="#">Regístrate</a>
                   </li>
                 </ul>
               </div>
@@ -131,30 +143,41 @@ if (!empty($_POST)) {
         </div>
       </nav>
     </div>
-    <form action="index.html" method="post">
-      <div class="col-xs-12 col-sm-8">
-        <div class="list-group list-group-item">
-          <h3 class="panel panel-primary"><center><strong>Iniciar sesión</strong></center><br></h3>
-          <hr>
-          <p>Completa tus datos. Si ya tienes una cuenta con nosotros, inicia sesión con tu correo electrónico y contraseña registrada.</p>
-          <div class="cont-input">
-            <input name="email" type="text" placeholder="Email" id="email" class="inp-txt-1" value="">
-          </div>
-            <div class="cont-input password">
-              <input name="password" type="password" placeholder="Contraseña" id="password" class="inp-txt-1" value="">
-            </div>
-              <input type="submit" value="Ingresar" >
-              <br><br>
-              <span>Si no tienes cuenta puedes registrarte aquí</span>
-              <a class="btn btn-primary" href="registro.html">Regístrate</a>
-            </div>
+
+    
+              <div class="container">
+                <form action="registrar.html" method="post">
+                  <div class="col-xs-12 col-sm-8">
+                    <div class="list-group list-group-item">
+                      <h3 class="panel panel-primary"><center><strong>Registro</strong></center><br></h3>
+                      <hr>
+                      <p>Completa tus datos. Si ya tienes una cuenta con nosotros, inicia sesión con tu correo electrónico y contraseña registrada</p>
+                        <div class="cont-input">
+                          <label for="nombre">Nombre</label>
+                          <input name="nombre" type="text" placeholder="Nombre" id="nombre" class="inp-txt-1">
+                        </div>
+                        <div class="cont-input">
+                          <label for="apellido">Apellido</label>
+                          <input name="apellido" type="text" placeholder="Apellidos" id="apellido" class="inp-txt-1">
+                        </div>
+                        <div class="cont-input">
+                          <label for="email">Email</label>
+                          <input name="email" type="text" placeholder="Email" id="email" class="inp-txt-1">
+                        </div>
+                        <div class="cont-input password">
+                          <label for="password">Contraseña</label>
+                          <input name="password" type="password" placeholder="Contraseña" id="password" class="inp-txt-1">
+                        </div>
+                          <input type="submit" value="Guardar" >
+                    </div>
+                  </div>
+                </form>
+              </div>
+              </div>
+            <!-- </div>
           </div>
         </div>
-      </form>
-      <!-- </div>
-    </div>
-  </div>
-</div> -->
+      </div> -->
 
       <!-- /Menu Pestaña -->
 

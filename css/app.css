@@ -3,7 +3,7 @@ body {
 }
 
 a {
-  color: #9C4B9E;
+  color: #eb4a5f;
 }
 
 a:hover {
@@ -28,11 +28,11 @@ a:hover {
 
 #inputEmail3, #inputPassword3 {
   width: 70%;
-  border: 2px solid #BBDC2F;
+  border: 2px solid #fff200;
 }
 
 #a {
-  color: #BBDC2F;
+  color: #fff200;
 }
 
 #login {
@@ -82,12 +82,12 @@ a:hover {
 }
 
 .form-horizontal textarea {
-  border: 2px solid #BBDC2F;
+  border: 2px solid #fff200;
 }
 
 .btn-default2 {
-  border: 2px solid #BBDC2F;
-  background-color: #BBDC2F;
+  border: 2px solid #fff200;
+  background-color: #fff200;
   cursor: pointer;
   user-select: none;
 }
@@ -101,13 +101,13 @@ a:hover {
 }
 
 .line {
-  background: #BBDC2F;
+  background: #fff200;
   padding-top: 15px;
   padding-left: 50px;
 }
 
 .panel-primary {
-  background: #BBDC2F;
+  background: #eb4a5f;
   padding-top: 15px;
   padding-bottom: 1px;
   border-radius: 5px;
@@ -116,7 +116,7 @@ a:hover {
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover {
-  background-color: #BBDC2F;
+  background-color: #fff200;
   position: relative;
   border-top: solid;
   border-left: solid;
@@ -126,13 +126,13 @@ a:hover {
 
 #header-container,
 #info-container {
-  background-color: #9C4B9E;
+  background-color: #eb4a5f;
   color: white;
   padding: 30px;
 }
 
 #menu-container {
-  background-color: #BBDC2F; f7f7f9
+  background-color: #fff200; f7f7f9
 }
 
 #menu-container .nav-container .nav {
@@ -141,11 +141,11 @@ a:hover {
 }
 
 .form-control:focus {
-  border-color: #9C4B9E;
+  border-color: #eb4a5f;
 }
 
 .btn.btn-platzi {
-  background-color: #9C4B9E;
+  background-color: #eb4a5f;
   color: white;
 }
 
@@ -224,8 +224,8 @@ a:hover {
 }
 
 #productos-container .list-group-item-action.active {
-  background-color: #9C4B9E;
-  border-color: #9C4B9E;
+  background-color: #eb4a5f;
+  border-color: #eb4a5f;
 }
 
 #productos-container .list-group+.list-group {
@@ -243,8 +243,8 @@ a:hover {
 }
 
 .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
-  background-color: #9C4B9E;
-  border-color: #9C4B9E;
+  background-color: #eb4a5f;
+  border-color: #eb4a5f;
 }
 
 .page-link, .page-link:focus, .page-link:hover {
@@ -426,7 +426,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #9C4B9E;
+    color: #eb4a5f;
     padding-top: 15px;
 }
 
@@ -921,7 +921,7 @@ section.blu p {
 
 .media {
   background: #fff;
-  border-bottom: solid 1px #c7c9c8;
+  border-bottom: solid 2px #c7c9c8;
   margin-bottom: 30px;
 }
 
